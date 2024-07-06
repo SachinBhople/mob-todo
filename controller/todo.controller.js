@@ -1,4 +1,4 @@
-const Todo = require("../module/Todo")
+const Todo = require("./module/Todo")
 
 exports.getAllTodos = async (req, res) => {
     const result = await Todo.find()
