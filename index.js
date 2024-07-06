@@ -7,6 +7,7 @@ mongoose.connect(process.env.MONGO_URL)
 const app = exprsss()
 app.use(exprsss.json())
 app.use(cors())
+app.use(exprsss.static("dist"))
 
 app.use("/api/todos", require("./route/todo.route"))
 
